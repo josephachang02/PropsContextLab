@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { useState, useContext } from "react";
 import "./styles.css";
 import Navbar from "./components/Navbar";
-import ProductsDisplay from "./components/ProductsDisplay";
-import Cart from "./pages/Cart";
+import ProductsDisplay from "./components/ProductsDisplay"
+import Cart from "./pages/Cart"
+import { Route, Routes} from 'react-router-dom';
 
 function App() {
   const [products, setProducts] = useState([

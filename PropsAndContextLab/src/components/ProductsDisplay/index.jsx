@@ -17,8 +17,7 @@ const ProductsDisplay = ({ products, setProducts }) => {
       <div>
         {/* Map through the products array */}
         {products.map((product) => (
-          <div key={product.name} onClick={() => handleProductClick(product.id)}>
-            {product.name}
+          <div key={product.name} onClick={() => handleProductClick(product.id)}>{product.name}
           </div>
         ))}
       </div>
